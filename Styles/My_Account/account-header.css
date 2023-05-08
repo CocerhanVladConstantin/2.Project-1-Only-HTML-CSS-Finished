@@ -1,0 +1,243 @@
+.profile-header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1531px;
+  height: 50px;
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
+}
+
+.header-market-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  color: #3985e0;
+  font-size: 40px;
+  width: 300px;
+  min-width: 300px;
+  height: 100%;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 60px;
+  gap: 5px;
+  background-color: white;
+  margin-right: 5%;
+}
+
+.fa-stroopwafel {
+  color:#3985e0;
+}
+
+.header-back-to-market {
+  width: 150px;
+  height: 100%;
+}
+
+.back-to-market {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.back-to-market:hover {
+  background-color: #c9d2d8;
+  color: black;
+  transition: 2s;
+}
+
+.back-to-market:hover i {
+  color: #3985e0;
+  transition: 2s;
+}
+
+.header-cart-container {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+.cart {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.header-cart-container .fa-cart-shopping {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.cart-items-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 6px;
+  left: 7px;
+  color: black;
+}
+
+.cart-name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-family: roboto, arial;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.fa-cart-shopping {
+  color: white;
+}
+
+.header-cart-container:hover {
+  background-color: #c9d2d8;
+  transition: 1s;
+}
+
+.header-cart-container:hover .cart-name {
+  color: black;
+  transition: 2s;
+}
+
+.header-cart-container:hover .fa-cart-shopping {
+  color: #3985e0;
+  transition: 2s;
+}
+
+.header-cart-container:hover .cart-items-counter {
+  color: white;
+  transition: 2s;
+}
+
+.header-favorites-container{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  position: relative;
+  z-index: 98;
+}
+
+.fa-heart {
+  color: white;
+}
+
+.favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.products-counter-fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  left: 55%;
+  top: 10%;
+  font-size: 10px;
+}
+
+.header-favorites-container:hover {
+  background-color: #c9d2d8;
+  transition: 1s;
+}
+
+.header-favorites-container:hover .fa-heart {
+  color: #3985e0;
+  transition: 2s;
+}
+
+.header-account-container {
+  position: relative;
+  width: 140px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  gap: 6px;
+}
+
+.account-name {
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  font-family: roboto, arial;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.account .fa-user {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  color: white;
+}
+
+.header-account-container:hover {
+  background-color: #c9d2d8;
+  transition: 1s;
+}
+
+.header-account-container:hover .account-name {
+  color: black;
+  transition: 2s;
+}
+
+.header-account-container:hover .fa-user {
+  color: #3985e0;
+  transition: 2s;
+}
+
+@media (min-width: 750px) and (max-width: 1599px) {
+  .profile-header {
+    width: 100%;
+  }
+}
+

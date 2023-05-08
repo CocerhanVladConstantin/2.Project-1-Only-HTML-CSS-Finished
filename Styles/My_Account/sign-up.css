@@ -1,0 +1,186 @@
+.sign-up-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 0px 20% 0px 20%;
+  font-family: Nunito, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.market-logo-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 40px;
+  width: 300px;
+  height: 50px;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 60px;
+  gap: 10px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  text-decoration: none;
+  color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.fa-stroopwafel {
+  color: white;
+}
+
+.sign-up-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 400px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.sign-up-nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.input-container,
+.button-container,
+.alternative-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-family: Roboto, Arial;
+  font-size: 15px;
+}
+
+.user-input,
+.user-password-input,
+.user-password-input-repeat {
+  width: 60%;
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 2%;
+}
+
+.sign-up-button,
+.back-to-sign-in-button {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  background-color: white;
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.button-container span {
+  padding-bottom: 5%;
+  color: white;
+}
+
+.button-container a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sign-up-button:hover,
+.back-to-sign-in-button:hover {
+  background: #c9d2d8;
+}
+
+.alternative-signup-container span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-family: roboto, arial;
+  font-size: 15px;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.alternative-sign-up-google,
+.alternative-sign-up-facebook,
+.alternative-sign-up-apple {
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.alternative-sign-up-brand {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: left;
+  align-items: center;
+}
+
+.fa-google,
+.fa-facebook,
+.fa-apple {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  left: 15px;
+  width: 25px;
+  height: 100%;
+  border-right: solid 1px rgba(255, 255, 255, 0.3);
+
+}
+
+.alternative-sign-up-google {
+  background-color: rgb(207, 85, 61);
+}
+
+.alternative-sign-up-facebook {
+  background-color: rgb(49, 68, 113);
+}
+
+.alternative-sign-up-apple {
+  background-color: rgb(0 0 0);
+}
+
+.alternative-sign-up-google:hover,
+.alternative-sign-up-google:active {
+  background-color: rgb(206, 65, 37);
+}
+
+.alternative-sign-up-facebook:hover,
+.alternative-sign-up-facebook:active {
+  background-color: rgb(35, 57, 107);
+}
+
+.alternative-sign-up-apple:hover,
+.alternative-sign-up-apple:active {
+  background-color: rgba(0, 0, 0, 0.805);
+}

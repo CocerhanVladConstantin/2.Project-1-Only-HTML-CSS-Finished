@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Super Market - Account Orders</title>
+
+  <link rel="stylesheet" href="/Assets/css/all.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/Styles/My_Account/account-header.css">
+  <link rel="stylesheet" href="/Styles/Footer.css">
+  <link rel="stylesheet" href="/Styles/My_Account/account-section.css">
+  <link rel="stylesheet" href="/Styles/General.css">
+
+  <script src="/index.js"></script>
+
+</head>
+
+<body>
+  <header class="profile-header-container">
+    <div class="profile-header">
+      <a href="/Super-Market.html" class="header-market-logo">
+        <span>Super</span>
+        <i class="fa-solid fa-stroopwafel fa-lg"></i>
+        <span>Market</span>
+      </a>
+
+      <div class="header-back-to-market">
+        <a class="back-to-market" href="/Super-Market.html">
+          <i class="fa-solid fa-chevron-left"></i>
+          <span>Back to market</span>
+        </a>
+      </div>
+
+      <div class="header-cart-container">
+        <a class="cart" href="/Cart.html">
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          <span class="cart-items-counter">0</span>
+          <span class="cart-name">Cart</span>
+        </a>
+
+      </div>
+
+      <div class="header-favorites-container">
+
+        <a class="favorites" href="/Sub-pages/My_Account/option-account-favorite-products.html"
+          target="active-account-option">
+          <i class="fa-regular fa-heart fa-2x"></i></i>
+          <span class="products-counter-fav">0</span>
+        </a>
+
+      </div>
+
+      <div class="header-account-container">
+        <a class="account">
+
+          <i class="fa-solid fa-user account-user fa-2x"></i>
+          <span class="account-name">My Account</span>
+
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="account-section-container">
+    <div class="account-section">
+      <div class="account-section-left-options">
+
+        <ul class="account-options-list">
+
+          <li class="account-option">
+            <a href="/sub-pages/My_Account/account.html">
+
+              <span>Account Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+          </li>
+
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-delivery-adress.html"><span>Delivery Adress</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-orders.html">
+              <span>My Orders</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-saved-cards.html">
+              <span>Saved Cards</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-favorite-products.html">
+              <span>Favorite Products</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-reviews.html">
+              <span>Reviews</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-warranties.html">
+              <span>Warranties</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-returns.html">
+              <span>Returns</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="section-account-option">
+
+  <div class="section-account-orders-container">
+    <div class="account-orders-title">
+      <i class="fa-solid fa-boxes-packing"></i>
+      <p>My Orders</p>
+    </div>
+    <div class="account-orders-search-container">
+      <div class="account-orders-search-select">
+  
+        <label for="orders-type-filter">See:</label>
+        <select name="orders-type-filter" id="" class="select-orders-type-filter">
+          <option value="all-orders">all orders</option>
+          <option value="orders-received">received orders</option>
+          <option value="active-orders">active orders</option>
+          <option value="canceled-orders">canceled orders</option>
+        </select>
+  
+        <label for="orders-timeline-filter">of</label>
+        <select name="orders-timeline-filter" id="" class="select-orders-timeline-filter">
+          <option value="past-1-month">past 1 month</option>
+          <option value="past-3-months">past 3 months</option>
+          <option value="past-6-months">past 6 months</option>
+          <option value="year-2020">2020 year</option>
+          <option value="year-2021">2021 year</option>
+          <option value="year-2022">2022 year</option>
+          <option value="year-2023">2023 year</option>
+          <option value="all">all</option>
+        </select>
+  
+      </div>
+      <div class="account-orders-search-bar">
+        <div class="orders-search-bar">
+          <button class="search-bar-button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+          <input type="search" placeholder="Search for product" class="search-bar">
+        </div>
+      </div>
+    </div>
+    <div class="account-orders">
+  
+      <div class="account-order">
+        <div class="order-products">
+          <div class="order-products-list-left">
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products Small Appliances Images/Microwave Samsung MS23K3513, 23 l, Digital, Quick Defrost, 800 W, Black.png"
+                alt="">
+            </a>
+            <a href="" class="order-product">
+              <img src="/Products Images/Products Fashion Images/Blouse for men, long sleeves, Slim Fit.png" alt="">
+            </a>
+            <a href="" class="order-product">
+              <img src="/Products Images/Products Drinks Images/Cider Strongbow Redberries, 24 x 0.33l .png" alt="">
+            </a>
+            <a href="" class="order-product">
+              <img src="/Products Images/Products Drinks Images/Energy Drink, Monster Green Energy,  dose 24 x 500ml .png"
+                alt="">
+            </a>
+            <a href="" class="order-product">
+              <img src="/Products Images/Products Drinks Images/Blonde Beer Ursus Premium, glass, 24 x 0.33l .png" alt="">
+            </a>
+          </div>
+          <div class="value-order-right">
+            <div class="value-order">
+              <span class="value-order-field-name">Total:</span>
+              <span class="value-order-value">0 $</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="order-details">
+          <div class="order-details-left">
+  
+            <a href="" class="order-number">
+              <span class="order-number-field-name">Order number:</span>
+              <span class="order-number-value">156418949</span>
+            </a>
+  
+            <div class="order-time-placed">
+              <span class="order-date-time-placed-field-name">Placed on:</span>
+              <span class="order-date-placed-value">24 August 2022</span>
+              <span class="order-time-placed-value">
+                <i class="fa-solid fa-clock"></i>00:04
+              </span>
+            </div>
+  
+            <div class="order-status">
+              <span class="order-status-field-name">Order status:</span>
+              <span class="order-status-value">Received</span>
+            </div>
+          </div>
+  
+          <div class="order-details-right">
+            <a href="" class="order-details-directory">Order details</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="account-order">
+        <div class="order-products">
+          <div class="order-products-list-left">
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products Large Appliances Images/Refrigerator Samsung RT46K6630S9-EO, 455 l, Class F, Full NoFrost, Water dispenser, Smart Conversion, Twin Cooling Plus, H 182.5 stainless steel .png"
+                alt="">
+            </a>
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products TVS Images/Television LED Nei 40NE6900, 100cm, Smart, 4K Ultra HD, Class G/Television LED Nei 40NE6900, 100cm, Smart, 4K Ultra HD, Class G.png"
+                alt="">
+            </a>
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products Phones & Tablets Images/Mobile Phone Samsung Galaxy Z Flip4, 8GB RAM, 256GB, 5G, Graphite.png"
+                alt="">
+            </a>
+          </div>
+          <div class="value-order-right">
+            <div class="value-order">
+              <span class="value-order-field-name">Total:</span>
+              <span class="value-order-value">0 $</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="order-details">
+          <div class="order-details-left">
+  
+            <a href="" class="order-number">
+              <span class="order-number-field-name">Order number:</span>
+              <span class="order-number-value">144384451</span>
+            </a>
+  
+            <div class="order-time-placed">
+              <span class="order-date-time-placed-field-name">Placed on:</span>
+              <span class="order-date-placed-value">27 February 2023</span>
+              <span class="order-time-placed-value">
+                <i class="fa-solid fa-clock"></i>03:07
+              </span>
+            </div>
+  
+            <div class="order-status2">
+              <span class="order-status-field-name">Order status:</span>
+              <span class="order-status-value2">On Road</span>
+            </div>
+          </div>
+  
+          <div class="order-details-right">
+            <a href="" class="order-details-directory">Order details</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="account-order">
+        <div class="order-products">
+          <div class="order-products-list-left">
+  
+            <a href="" class="order-product">
+              <img src="/Products Images/Products Fashion Images/Female Coat, ADA, wool, acrylic, polyester, Gray.png"
+                alt="">
+            </a>
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products Small Appliances Images/Blender, Biovita Legend-800, 2 vase x 0.6 L, power 800W, stainless steel.png"
+                alt="">
+            </a>
+  
+            <a href="" class="order-product">
+              <img
+                src="/Products Images/Products TVS Images/Photo Camera DSLR Canon EOS 4000D,18.0 MP, Black + Object EF-S 18-55mm F-3.5-5.6 III Black.png"
+                alt="">
+            </a>
+          </div>
+          <div class="value-order-right">
+            <div class="value-order">
+              <span class="value-order-field-name">Total:</span>
+              <span class="value-order-value">0 $</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="order-details">
+          <div class="order-details-left">
+  
+            <a href="" class="order-number">
+              <span class="order-number-field-name">Order number:</span>
+              <span class="order-number-value">125364798</span>
+            </a>
+  
+            <div class="order-time-placed">
+              <span class="order-date-time-placed-field-name">Placed on:</span>
+              <span class="order-date-placed-value">02 June 2021</span>
+              <span class="order-time-placed-value">
+                <i class="fa-solid fa-clock"></i>18:23
+              </span>
+            </div>
+  
+            <div class="order-status3">
+              <span class="order-status-field-name">Order status:</span>
+              <span class="order-status-value3">Canceled</span>
+            </div>
+          </div>
+  
+          <div class="order-details-right">
+            <a href="" class="order-details-directory">Order details</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!---
+      <div class="account-empty-option-message">
+        <img src="/Logo/empty-orders.png" alt="" class="logo">
+        <p>You have no orders... :(</p>
+        <a href="/Super-Market.html" target="_parent" class="account-empty-option-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+        Back to market</a>
+      </div>
+      --->
+  
+    </div>
+  </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-content">
+
+      <div class="footer-left-group">
+        <a class="footer-left-group-title" href="">Servicies for our clients</a>
+        <ul>
+          <li><a href="">Open parcel upon delivery</a></li>
+          <li><a href="">30 Days return policy</a></li>
+          <li><a href="">Interest-free installments with bank card</a></li>
+          <li><a href="">Warranties & Service</a></li>
+          <li><a href="">Black Friday</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-mid-group">
+        <div class="footer-mid-group-title">
+          <div class="market-logo-on-footer">
+            <span>Super</span>
+            <i class="fa-solid fa-stroopwafel fa-lg"></i>
+            <span>Market</span>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="">About Super Market</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Processing of personal data</a></li>
+          <li><a href="">Cookies policy</a></li>
+        </ul>
+
+        <div class="footer-mid-group-social-media">
+          <a><i class="fa-brands fa-twitter fa-2x"></i></a>
+          <a><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a><i class="fa-brands fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-right-group">
+        <a class="footer-right-group-title" href="">Orders & Delivery</a>
+        <ul>
+          <li><a href="">My Account at Super Market</a></li>
+          <li><a href="">Delivery of orders</a></li>
+          <li><a href="">Return Policy</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

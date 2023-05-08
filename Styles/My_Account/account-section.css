@@ -1,0 +1,2267 @@
+html,body {
+  height: 800px;
+}
+
+.account-section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.account-section {
+  display: flex;
+  width: 80%;
+  max-width: 1531px;
+  min-height: 900px;
+}
+
+/* options list start */
+
+.account-section-left-options {
+  display: flex;
+  align-items: center;
+  height: 55%;
+  width: 20%;
+  height: 420px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.704);
+}
+
+.account-options-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin: 20px 0 20px 0;
+}
+
+.account-option {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #c9d2d8;
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.account-option a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.account-option span {
+  padding-left: 20px;
+}
+
+.account-option a .fa-chevron-right {
+  padding-right: 20px;
+}
+
+.account-option a:hover {
+  color: black;
+  background-color: #c9d2d8;
+  transition: 1s;
+}
+
+.account-option a:hover .fa-chevron-right {
+  color: #3985e0;
+  transition: 1s;
+}
+
+/* options list end */
+
+/* iframe section start*/
+
+.section-account-option {
+  width: 78%;
+  border: none;
+  font-family: Roboto, Arial;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+/* iframe section start end*/
+
+.section-account-details-container,
+.section-account-adresses-container,
+.section-account-orders-container,
+.section-account-saved-cards-container,
+.section-account-favorite-products-container,
+.section-account-reviews-container,
+.section-account-warranties-container,
+.section-account-returns-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  border-radius: 5px;
+}
+
+.account-details-title,
+.account-adresses-title-add-button,
+.account-adresses-title-add-button2,
+.account-orders-title,
+.account-saved-cards-title,
+.account-favorite-products-title,
+.account-reviews-title,
+.account-warranties-title,
+.account-returns-title {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+  height: 80px;
+  font-family: Roboto, Arial;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.account-favorite-products,
+.account-review-products,
+.account-warranty-products,
+.account-returned-products {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  font-family: Roboto, Arial;
+  font-weight: 400;
+  font-size: 20px;
+  max-height: 840px;
+  overflow-y: scroll;
+}
+
+.account-favorite-product,
+.account-product-review,
+.account-product-warranty,
+.account-product-return {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.account-favorite-product-thumbnail,
+.product-review-thumbnail,
+.product-warranty-thumbnail,
+.product-return-thumbnail {
+  width: 20%;
+  height: 100%;
+}
+
+.account-favorite-product-thumbnail img,
+.product-review-thumbnail img,
+.product-warranty-thumbnail img,
+.returned-product-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*first option account details start */
+
+/* account details top start */
+
+.account-details-title {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #c9d2d8;
+}
+
+.account-details-title .fa-circle-info {
+  color: #3985e0;
+  margin-right: 10px;
+}
+
+.section-account-details-top {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.account-user-details-container {
+  width: 80%;
+  height: 100%;
+  border-right: 1px solid #c9d2d8;
+}
+
+.account-user-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+}
+
+.account-user-picture {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.user-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 125px;
+  background-color: #3985e0;
+}
+
+.user-picture span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 100px;
+  color: white;
+}
+
+.user-picture .fa-pencil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  background-color: white;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+  border: 2px solid #3985e0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+}
+
+.account-detail-user-nickname,
+.account-detail-user-name,
+.account-detail-user-email,
+.account-details-user-phone-number {
+  display: flex;
+  align-items: top;
+  width: 100%;
+  height: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  font-family: Roboto, arial;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.user-nickname-field-name,
+.user-name-field-name,
+.user-email-field-name,
+.user-phone-number-field-name {
+  width: 35%;
+  color: rgb(99, 99, 99);
+}
+
+.user-nickname-value,
+.user-name-value,
+.user-email-value,
+.user-phone-number-value {
+  width: 65%;
+}
+
+.account-details-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+}
+
+.account-details-edit button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 80%;
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  gap: 10px;
+  text-decoration: none;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  border-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.account-details-edit button:hover {
+  background: #c9d2d8;
+  color: black;
+}
+
+.account-details-edit button:hover i {
+  color: #3985e0;
+}
+
+.account-details-account-age {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  font-family: roboto, arial;
+  font-weight: 400;
+}
+
+.account-details-account-age-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.3%;
+  background-color: white;
+  gap: 10px;
+}
+
+.account-details-account-age-title .fa-clock {
+  color: #3985e0;
+}
+
+.account-details-account-age-title span {
+  font-size: 20px;
+}
+
+.account-details-account-age-creation-date,
+.account-details-account-age-time-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 33.3%;
+  gap: 10px;
+}
+
+.account-details-account-age-creation-date-title,
+.account-details-account-age-time-counter-type-value {
+  font-size: 20px;
+}
+
+.account-details-account-age-creation-date-value {
+  font-size: 25px;
+}
+
+.account-details-account-age-time-counter-age-value {
+  font-size: 35px;
+}
+
+/* account details top end */
+
+
+/* account details bottom start */
+
+.section-account-details-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+}
+
+.account-details-activities-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  padding: 0 30px 0 30px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.account-details-activities-title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 150px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.account-details-activities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+}
+
+.account-details-activities-orders-placed,
+.account-details-activities-favorites,
+.account-details-activities-reviews {
+  flex: 1;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  border-right: 1px solid #c9d2d8;
+}
+
+.account-details-activities-reviews {
+  border-right: none;
+}
+
+.account-details-activities-orders-placed-title,
+.account-details-activities-favorites-title,
+.account-details-activities-reviews-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  gap: 10px;
+}
+
+.account-details-activities-orders-placed-title .fa-boxes-packing {
+  color: rgb(67, 177, 255);
+}
+
+.account-details-activities-favorites-title .fa-heart {
+  color: crimson;
+}
+
+.account-details-activities-reviews-title .fa-star {
+  color: orange;
+}
+
+.account-details-activities-orders-placed-title span,
+.account-details-activities-favorites-title span,
+.account-details-activities-reviews-title span {
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.account-details-activities-orders-placed-counter,
+.account-details-activities-favorites-counter,
+.account-details-activities-reviews-counter {
+  width: 100%;
+  height: 70%;
+}
+
+.orders-placed-counter,
+.favorites-counter,
+.reviews-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, Arial;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+/* account details bottom end */
+
+/*first option account details end */
+
+/*second option account adresses start*/
+
+.account-adresses-title-add-button {
+  justify-content: space-between;
+}
+
+.account-adresses-title-add-button .fa-location-dot {
+  margin-right: 10px;
+  color: #3985e0;
+}
+
+.add-adress-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.add-adress-btn .button-plus {
+  margin-right: 10px;
+}
+
+.account-adresses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.account-adress {
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;
+  padding: 10px 20px 10px 20px;
+  height: 260px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px #c9d2d8;
+}
+
+.account-adress-client-name,
+.account-adress-client-phone-number,
+.account-adress-client-delivery-address-county,
+.account-adress-client-delivery-address-city,
+.account-adress-client-adress,
+.account-adress-client-adress-buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.account-adress-client-adress-buttons {
+  gap: 10px;
+}
+
+.client-name-field-name,
+.client-phone-number-field-name,
+.client-delivery-adress-county-field-name,
+.client-delivery-adress-city-field-name,
+.client-adress-field-name {
+  width: 35%;
+  color: rgb(99, 99, 99);
+}
+
+.account-adress-client-name .fa-user-large, 
+.client-phone-number-field-name .fa-mobile-screen,
+.client-delivery-adress-county-field-name .fa-map,
+.client-delivery-adress-city-field-name .fa-building,
+.client-adress-field-name .fa-magnifying-glass-location {
+  color: #3985e0;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.client-name-value,
+.client-phone-number-value,
+.client-delivery-adress-county-value,
+.client-delivery-adress-city-value,
+.client-adress-value {
+  width: 65%;
+}
+
+.edit-adress-btn {
+  border: none;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  font-family: roboto, arial;
+  font-size: 20px;
+  font-weight: 500;
+  width: 80px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.remove-adress-btn {
+  border: none;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  font-family: roboto, arial;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*second option account adresses end*/
+
+/*third option account orders start */
+
+.account-orders-title .fa-boxes-packing {
+  color: #3985e0;
+  margin-right: 10px;
+}
+
+.account-orders-search-container,
+.account-reviews-search-container {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  font-family: Roboto, arial;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.account-orders-search-select,
+.account-reviews-search-select {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 30px;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.account-reviews-search-select {
+  flex: 2;
+}
+
+.select-orders-type-filter,
+.select-orders-timeline-filter,
+.select-order-reviews-filter,
+.select-state-reviews-filter,
+.select-reviews-timeline-filter {
+  height: 70%;
+  width: 120px;
+  border-radius: 5px;
+  border: 2px solid #3985e0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.account-orders-search-bar,
+.account-reviews-search-bar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: right;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 0px;
+  height: 100%;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.orders-search-bar,
+.reviews-search-bar {
+  display: flex;
+  height: 70%;
+  border: solid 2px #3985e0;
+}
+
+.orders-search-bar .search-bar-button,
+.reviews-search-bar .search-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.orders-search-bar .search-bar-button:hover,
+.reviews-search-bar .search-bar-button:hover {
+  background-color: #c9d2d8;
+}
+
+.account-orders-search-bar .search-bar,
+.reviews-search-bar .search-bar {
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.account-orders {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.account-order {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  border-radius: 5px;
+  font-family: roboto, arial;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.order-products {
+  display: flex;
+  height: 50%;
+  border-bottom: 1px solid #3985e0;
+}
+
+.order-products-list-left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-product {
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  border: solid 1px #3985e0;
+  border-radius: 5px;
+}
+
+.order-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.value-order-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.value-order {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-details {
+  display: flex;
+  height: 50%;
+}
+
+.order-details-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  gap: 10px;
+}
+
+.order-number {
+  display: flex;
+  text-decoration: none;
+  color: #3985e0;
+  width: 70%;
+}
+
+.order-time-placed {
+  display: flex;
+  margin: 0;
+  color: rgb(99, 99, 99);
+  width: 70%;
+}
+
+.order-number-field-name,
+.order-date-time-placed-field-name {
+  width: 30%;
+}
+
+.order-date-placed-value,
+.order-time-placed-value {
+  color: black;
+}
+
+.order-date-placed-value {
+  margin-right: 20px;
+}
+
+.order-time-placed-value i {
+  margin-right: 10px;
+  color: #3985e0;
+}
+
+.order-status,
+.order-status2,
+.order-status3 {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 30%;
+  right: 0;
+  border: solid 1px rgb(21, 167, 21);
+  border-radius: 20px;
+}
+
+.order-status2 {
+  border: solid 1px #3985e0;
+}
+
+.order-status3 {
+  border: solid 1px rgb(249, 40, 9);
+}
+
+.order-status-field-name {
+  margin-right: 10px;
+}
+
+.order-status-value {
+  color: rgb(21, 167, 21);
+}
+
+.order-status-value2 {
+  color: #3985e0;
+}
+
+.order-status-value3 {
+  color: rgb(249, 40, 9);
+}
+
+.order-details-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.order-details-directory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60%;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  border-radius: 25px;
+}
+
+/*third option account orders end */
+
+
+/* fourth option saved cards start*/
+
+.account-saved-cards-add-card {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.account-saved-cards-left-add-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.account-saved-cards-left-add-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.account-saved-cards-left-add-card .add-card {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: Roboto, arial;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.account-saved-cards-left-add-card .add-card:hover {
+  background: linear-gradient(to right, #3e56c2 10%, #3985e0);
+}
+
+.account-saved-cards-right-add-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.add-card-details-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  gap: 10px;
+}
+
+.add-card-details-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  color: #3985e0;
+  border: 1px solid #3985e0;
+  border-radius: 50px;
+}
+
+.add-card-details-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #3985e0;
+}
+
+.add-card-detail {
+  display: flex;
+  margin: 0;
+  font-size: 15px;
+}
+
+.account-saved-cards-title .fa-credit-card {
+  color: #3985e0;
+  margin-right: 10px;
+}
+
+.account-saved-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.account-saved-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c9d2d8;
+  border-radius: 5px;
+}
+
+.saved-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgb(253, 159, 62);
+  color: white;
+}
+
+.saved-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 40px;
+}
+
+.saved-card-edit-btn,
+.saved-card-remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.saved-card-edit-btn:hover ,
+.saved-card-remove-btn:hover {
+  background: linear-gradient(to right, #3e56c2 10%, #3985e0);
+}
+
+.saved-card-type {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.saved-card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.saved-card-type span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.saved-card-icon {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 40px;
+}
+
+.saved-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.saved-card-number {
+  letter-spacing: 5px;
+}
+
+
+.saved-card-expiration-date {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 0 0 70px;
+  font-size: 20px;
+}
+
+.saved-card-expiration-date p {
+  margin: 0;
+}
+
+.saved-card-expiration-date span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.saved-card-holder-name {
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+}
+
+/* fourth option saved cards end */
+
+/*fifth option favorite products start*/
+
+.account-favorite-products-title .fa-star {
+  color: orange;
+  margin-right: 10px;
+}
+
+.account-favorites-search-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: roboto, arial;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.account-favorites-order-selector-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 0 10px 30px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  gap: 10px;
+}
+
+.account-favorites-order-selector-list {
+  border: 2px solid #3985e0;
+}
+
+.account-favorites-search-bar-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 0px;
+  background-color: white;
+  justify-content: right;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.account-favorites-search-bar {
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border: 2px solid #3985e0;
+}
+
+.account-favorites-search-bar .search-bar-btn {
+  display: flex;
+  width: 40px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.account-favorites-search-bar .search-bar-btn:hover {
+  background-color: #c9d2d8;
+}
+
+.account-favorites-search-bar .search-bar {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.account-favorite-product-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+}
+
+.account-favorite-product-discount-toolbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: rgb(239,40,9);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.account-favorite-product-content-title {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-decoration: none;
+  color: black;
+}
+
+.account-favorite-product-content-title:hover {
+  color: #3985e0;
+}
+
+.account-favorite-product-rating-stars {
+  display: flex;
+  color: black;
+  gap: 10px;
+}
+
+.account-favorite-product-rating-stars .fa-star {
+  color: orange;
+}
+
+.account-favorite-product-rating-stars .fa-star-half-stroke {
+  color: orange;
+}
+
+.account-favorite-product-rating-stars .reviews-count {
+  color: rgb(136, 136, 136);
+}
+
+.account-favorite-product-secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 20%;
+  height: 100%;
+  border-left: 1px solid #c9d2d8;
+  box-sizing: border-box;
+  padding:  0 0 0 10px;
+}
+
+.secondary-content-product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+
+.secondary-content-product-price .product-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin-right: 20px;
+}
+
+.secondary-content-product-price del {
+  font-size: 20px;
+}
+
+.secondary-content-product-price ins {
+  color: rgb(239,40,9);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.secondary-content-product-cart-btn {
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
+}
+
+.secondary-content-product-cart-btn .add-to-cart-button {
+  height: 40px;
+  width: 120px;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.secondary-content-product-cart-btn .add-to-cart-button:hover {
+  background: linear-gradient(to right, #3e56c2 10%, #3985e0);
+}
+
+.secondary-content-product-remove-btn {
+  display: flex;
+  justify-content: right;
+  color: #3985e0;
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+  font-size: 15px;
+  gap: 5px;
+}
+
+.secondary-content-product-remove-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*fifth option favorite products start*/
+
+/* sixth option reviews start */
+
+  .account-reviews-title .fa-pen {
+    color: #3985e0;
+    margin-right: 10px;
+  }
+
+  .product-review-details {
+    display: flex;
+    width: 80%;
+    height: 100%;
+  }
+
+  .product-review-details-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 10px;
+    width: 70%;
+    height: 100%;
+    word-break: normal;
+    border-right: solid 1px #c9d2d8;
+  }
+
+  .review-details-product-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  }
+
+  .review-details-product-review-rating,
+  .review-details-product-review-comment {
+    display: flex;
+  }
+
+  .product-review-rating-field-name,
+  .product-review-comment-field-name {
+    color: rgb(99,99,99);
+    width: 30%;
+  }
+
+  .product-review-rating {
+    width: 70%;
+  }
+
+  .product-review-comment-field-value {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .product-review-rating .fa-star {
+    color: orange;
+  }
+
+  .review-details-product-review p {
+    color: black;
+  }
+
+  .product-review-details-right {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    width: 30%;
+    height: 100%;
+  }
+
+  .product-review-details-right i {
+    color: #3985e0;
+  }
+
+  .review-details-product-order-number,
+  .product-review-btn,
+  .review-details-product-order-date,
+  .review-details-product-order-time {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    gap: 10px;
+    color: black;
+  }
+
+  .product-review-btn {
+    justify-content: center;
+  }
+
+  .review-details-product-order-number p,
+  .review-details-product-order-date p,
+  .review-details-product-order-time p {
+    color: rgb(99,99,99);
+    margin: 0;
+    gap: 10px;
+  }
+
+  .review-details-product-order-number a {
+    color: #3985e0;
+  }
+
+  .review-details-product-order-date span,
+  .review-details-product-order-time span {
+    color: black;
+  }
+
+  .product-review-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 70%;
+    background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .product-review-btn button:hover {
+    background: linear-gradient(to right, #3e56c2 10%, #3985e0);
+  }
+
+/* sixth option reviews end */
+
+/* seventh option warranties start */
+
+  .account-warranties-title .fa-file-contract {
+    color: #3985e0;
+    margin-right: 10px;
+  }
+
+    .account-warranties-search-container {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: roboto, arial;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  
+    .account-warranties-order-selector-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 0 10px 30px;
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      gap: 10px;
+    }
+  
+    .account-warranties-order-selector-list {
+      border: 2px solid #3985e0;
+    }
+  
+    .account-warranties-search-bar-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 30px 10px 0px;
+      background-color: white;
+      justify-content: right;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  
+    .account-warranties-search-bar {
+      display: flex;
+      align-items: center;
+      height: 70%;
+      border: 2px solid #3985e0;
+    }
+  
+    .account-warranties-search-bar .search-bar-btn {
+      display: flex;
+      width: 40px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .account-warranties-search-bar .search-bar-btn:hover {
+      background-color: #c9d2d8;
+    }
+  
+    .account-warranties-search-bar .search-bar {
+      border: none;
+      outline: none;
+      padding-left: 10px;
+    }
+
+  .product-warranty-details {
+    display: flex;
+    width: 80%;
+    height: 100%;
+  }
+
+  .product-warranty-content-left {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    width: 70%;
+    height: 100%;
+    word-break: normal;
+    border-right: solid 1px #c9d2d8;
+  }
+
+  .warranty-product-title,
+  .warranty-product-rating {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    height: 25%;
+  }
+
+  .warranty-product-rating {
+    gap: 10px;
+  }
+
+  .warranty-product-rating .avg-rating {
+    color: black;
+  }
+
+  .warranty-product-rating .reviews-count {
+    color: rgb(99,99,99);
+  }
+
+  .warranty-product-rating-stars .fa-star {
+    color: orange;
+  }
+
+  .product-warranty-lenght-expiration-date {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    gap: 5%;
+  }
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+    color: white;
+    gap: 10px;
+  }
+
+  .product-expiration-date {
+    width: 50%;
+  }
+
+  .product-warranty-content-right {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    width: 30%;
+    height: 100%;
+  }
+
+    .product-warranty-content-right i {
+      color: #3985e0;
+    }
+  
+    .warranty-details-product-order-number,
+    .warranty-details-product-order-date,
+    .warranty-details-product-order-time {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    gap: 10px;
+    }
+
+    .warranty-details-product-order-number p,
+    .warranty-details-product-order-date p,
+    .warranty-details-product-order-time p {
+      color: rgb(99, 99, 99);
+      margin: 0;
+      gap: 10px;
+    }
+  
+    .warranty-details-product-order-number span,
+    .warranty-details-product-order-date span,
+    .warranty-details-product-order-time span {
+      color: black;
+    }
+
+    .warranty-details-product-order-number a {
+      color: #3985e0;
+    }
+
+/* seventh option warranties end */
+
+/* eighth option returns start */
+
+  .account-returns-title .fa-rotate-left {
+    color: #3985e0;
+    margin-right: 10px;
+  }
+
+    .account-returns-search-container {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: roboto, arial;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  
+    .account-returns-order-selector-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 0 10px 30px;
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      gap: 10px;
+    }
+  
+    .account-returns-order-selector-list {
+      border: 2px solid #3985e0;
+    }
+  
+    .account-returns-search-bar-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 30px 10px 0px;
+      background-color: white;
+      justify-content: right;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  
+    .account-returns-search-bar {
+      display: flex;
+      align-items: center;
+      height: 70%;
+      border: 2px solid #3985e0;
+    }
+  
+    .account-returns-search-bar .search-bar-btn {
+      display: flex;
+      width: 40px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .account-returns-search-bar .search-bar-btn:hover {
+      background-color: #c9d2d8;
+    }
+  
+    .account-returns-search-bar .search-bar {
+      border: none;
+      outline: none;
+      padding-left: 10px;
+    }
+
+  .returned-product {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .returned-product-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 20%;
+    height: 100%;
+    gap: 10px;
+    
+  }
+
+  .returned-product-content1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+    color: white;
+    gap: 10px;
+    border-radius: 5px;
+  }
+
+  .returned-product-content1 a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .returned-product-thumbnail {
+    display: flex;
+    width: 20%;
+    height: 100%;
+  }
+
+  .returned-product-title {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+  }
+
+  .returned-product-content2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 20%;
+    height: 100%;
+  }
+
+  .return-details-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 140px;
+    background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+    border-radius: 5px;
+    color: white;
+  }
+
+/* eighth option returns end */
+
+.account-empty-option-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.account-empty-option-message .logo {
+  width: 150px;
+  height: 60%;
+}
+
+.account-empty-option-message p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 25%;
+  font-family: roboto, arial;
+  font-size: 30px;
+
+}
+
+.account-empty-option-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 15%;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #4a60c1 10%, #3985e0);
+  color: white;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 750px) and (max-width: 1099px) {
+  .account-reviews-search-bar {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .reviews-search-bar {
+    width: 100%;
+  }
+
+  .search-bar-button {
+    width: 30%;
+  }
+
+  .reviews-search-bar .search-bar {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 0 0 5px;
+  }
+
+}
+
+@media (min-width: 750px) and (max-width: 1299px) {
+  .account-section {
+    width: 99%;
+  }
+
+  .user-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .user-picture span {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-picture .fa-pencil {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-nickname-field-name,
+  .user-name-field-name,
+  .user-email-field-name,
+  .user-phone-number-field-name {
+    width: 40%;
+  }
+  
+  .user-nickname-value,
+  .user-name-value,
+  .user-email-value,
+  .user-phone-number-value {
+    width: 60%;
+  }
+
+  .account-details-activities-title {
+    height: 15%;
+  }
+
+  .account-details-activities-title span {
+    height: 60%;
+  }
+
+  .account-option span {
+    font-size: 16px;
+  }
+
+  .order-number-field-name {
+    width: 40%;
+  }
+
+  .order-date-time-placed-field-name {
+    font-size: 18px;
+  }
+  .order-date-placed-value {
+    font-size: 16px;
+  }
+
+  .order-time-placed-value {
+    font-size: 16px;
+  }
+
+  .order-status,
+  .order-status2,
+  .order-status3 {
+    width: 32%;
+  }
+
+  .order-status-field-name {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .order-status-value,
+  .order-status-value2,
+  .order-status-value3 {
+    font-size: 14px;
+  }
+
+  .account-saved-cards {
+    grid-template-columns: 80%;
+  }
+
+  .saved-card {
+    max-width: 375px;
+  }
+
+  .secondary-content-product-price .product-price {
+  margin-right: 10px;
+}
+
+  .product-review-rating-field-name,
+  .product-review-comment-field-name {
+    color: rgb(99, 99, 99);
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .product-review-rating {
+    width: 60%;
+  }
+
+  .product-review-comment-field-value {
+    width: 60%;
+  }
+
+  .product-review-details-left {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 60%;
+  }
+
+  .product-review-details-right {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 40%;
+  }
+
+  .review-details-product-order-number,
+  .product-review-btn,
+  .review-details-product-order-date,
+  .review-details-product-order-time {
+    gap: 5px;
+  }
+
+  .warranty-product-rating {
+    gap: 10px;
+  }
+
+  .product-warranty-lenght-expiration-date {
+    bottom: 10px;
+    left: 10px;
+    gap: 5%;
+  }
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    width: 45%;
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .product-warranty-content-left {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 60%;
+  }
+
+  .product-warranty-content-right {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40%;
+  }
+
+  .warranty-details-product-order-number,
+  .warranty-details-product-order-date,
+  .warranty-details-product-order-time {
+    font-size: 18px;
+    gap: 5px;
+  }
+
+  .returned-product-content1 {
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .product-warranty-lenght,
+  .product-expiration-date {
+    font-size: 12px;
+  }
+
+  .returned-product-content1 {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    font-size: 14px;
+  }
+
+  .returned-product-content1 {
+    font-size: 18px;
+  }
+
+}
+
+
+@media (min-width: 1300px) and (max-width: 1599px) {
+
+  .account-section {
+      width: 99%;
+    }
+
+  .user-picture {
+    width: 180px;
+    height: 180px;
+  }
+
+  .user-picture span {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-picture .fa-pencil {
+    width: 40px;
+    height: 40px;
+  }
+
+  .account-option span {
+    font-size: 20px;
+  }
+
+    .order-date-time-placed-field-name {
+      font-size: 20px;
+    }
+  
+    .order-date-placed-value {
+      font-size: 20px;
+    }
+  
+    .order-time-placed-value {
+      font-size: 20px;
+    }
+  
+    .order-status,
+    .order-status2,
+    .order-status3 {
+      width: 35%;
+    }
+  
+    .order-status-field-name {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  
+    .order-status-value,
+    .order-status-value2,
+    .order-status-value3 {
+      font-size: 20px;
+    }
+
+  .review-details-product-order-number p,
+  .review-details-product-order-date p,
+  .review-details-product-order-time p {
+    font-size: 16px;
+  }
+
+  .warranty-product-rating {
+    gap: 10px;
+  }
+
+  .product-warranty-lenght-expiration-date {
+    bottom: 10px;
+    left: 10px;
+    gap: 5%;
+  }
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    width: 45%;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .product-warranty-content-left {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 60%;
+  }
+
+  .product-warranty-content-right {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 40%;
+  }
+
+  .warranty-details-product-order-number,
+  .warranty-details-product-order-date,
+  .warranty-details-product-order-time {
+    font-size: 20px;
+    gap: 5px;
+  }
+
+}
+
+@media (min-width: 1599px) and (max-width: 1699px) {
+  .order-status,
+  .order-status2,
+  .order-status3 {
+    width: 35%;
+  }
+
+  .review-details-product-order-number p,
+  .review-details-product-order-date p,
+  .review-details-product-order-time p {
+    font-size: 16px;
+  }
+
+  .warranty-product-rating {
+    gap: 10px;
+  }
+
+  .product-warranty-lenght-expiration-date {
+    bottom: 10px;
+    left: 10px;
+    gap: 5%;
+  }
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    width: 45%;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .product-warranty-content-left {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 60%;
+  }
+
+  .product-warranty-content-right {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 40%;
+  }
+
+  .warranty-details-product-order-number,
+  .warranty-details-product-order-date,
+  .warranty-details-product-order-time {
+    font-size: 20px;
+    gap: 5px;
+  }
+
+}
+
+@media (min-width: 1700px) and (max-width: 1799px) {
+  .review-details-product-order-number p,
+  .review-details-product-order-date p,
+  .review-details-product-order-time p {
+    font-size: 18px;
+  }
+
+  .warranty-product-rating {
+    gap: 10px;
+  }
+
+  .product-warranty-lenght-expiration-date {
+    bottom: 10px;
+    left: 10px;
+    gap: 5%;
+  }
+
+  .product-warranty-lenght,
+  .product-expiration-date {
+    width: 45%;
+    gap: 5px;
+    font-size: 18px;
+  }
+
+  .warranty-details-product-order-number,
+  .warranty-details-product-order-date,
+  .warranty-details-product-order-time {
+    font-size: 18px;
+    gap: 5px;
+  }
+}
+
+
+

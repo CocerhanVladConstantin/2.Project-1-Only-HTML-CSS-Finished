@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Super Market - Reviews</title>
+
+  <link rel="stylesheet" href="/Assets/css/all.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/Styles/My_Account/account-header.css">
+  <link rel="stylesheet" href="/Styles/Footer.css">
+  <link rel="stylesheet" href="/Styles/My_Account/account-section.css">
+  <link rel="stylesheet" href="/Styles/General.css">
+
+  <script src="/index.js"></script>
+
+</head>
+
+<body>
+  <header class="profile-header-container">
+    <div class="profile-header">
+      <a href="/Super-Market.html" class="header-market-logo">
+        <span>Super</span>
+        <i class="fa-solid fa-stroopwafel fa-lg"></i>
+        <span>Market</span>
+      </a>
+
+      <div class="header-back-to-market">
+        <a class="back-to-market" href="/Super-Market.html">
+          <i class="fa-solid fa-chevron-left"></i>
+          <span>Back to market</span>
+        </a>
+      </div>
+
+      <div class="header-cart-container">
+        <a class="cart" href="/Cart.html">
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          <span class="cart-items-counter">0</span>
+          <span class="cart-name">Cart</span>
+        </a>
+
+      </div>
+
+      <div class="header-favorites-container">
+
+        <a class="favorites" href="/Sub-pages/My_Account/option-account-favorite-products.html"
+          target="active-account-option">
+          <i class="fa-regular fa-heart fa-2x"></i></i>
+          <span class="products-counter-fav">0</span>
+        </a>
+
+      </div>
+
+      <div class="header-account-container">
+        <a class="account">
+
+          <i class="fa-solid fa-user account-user fa-2x"></i>
+          <span class="account-name">My Account</span>
+
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="account-section-container">
+    <div class="account-section">
+      <div class="account-section-left-options">
+
+        <ul class="account-options-list">
+
+          <li class="account-option">
+            <a href="/sub-pages/My_Account/account.html">
+
+              <span>Account Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+          </li>
+
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-delivery-adress.html"><span>Delivery Adress</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-orders.html">
+              <span>My Orders</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-saved-cards.html">
+              <span>Saved Cards</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-favorite-products.html">
+              <span>Favorite Products</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-reviews.html">
+              <span>Reviews</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-warranties.html">
+              <span>Warranties</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="account-option">
+            <a href="/Sub-pages/My_Account/option-account-returns.html">
+              <span>Returns</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="section-account-option">
+
+  <div class="section-account-reviews-container">
+    <div class="account-reviews-title">
+      <i class="fa-solid fa-pen"></i>
+      <span>My Reviews</span>
+    </div>
+  
+    <div class="account-reviews-search-container">
+      <div class="account-reviews-search-select">
+  
+        <label for="order-reviews-filter">See:</label>
+        <select name="order-reviews-filter" id="" class="select-order-reviews-filter">
+          <option value="all-products">all products</option>
+          <option value="newest-to-oldest">newest to oldest</option>
+          <option value="oldest-to-newest">oldest to newest</option>
+        </select>
+  
+        <label for="state-reviews-filter">of:</label>
+        <select name="state-reviews-filter" id="" class="select-state-reviews-filter">
+          <option value="reviewed-products">reviewed</option>
+          <option value="non-reviewed-products">non reviewed</option>
+        </select>
+  
+        <label for="timeline-review-filter">from:</label>
+        <select name="timeline-review-filter" id="" class="select-reviews-timeline-filter">
+          <option value="past-1-month">past 1 month</option>
+          <option value="past-3-months">past 3 months</option>
+          <option value="past-6-months">past 6 months</option>
+          <option value="year-2020">2020 year</option>
+          <option value="year-2021">2021 year</option>
+          <option value="year-2022">2022 year</option>
+          <option value="year-2023">2023 year</option>
+          <option value="all">all</option>
+        </select>
+  
+      </div>
+      <div class="account-reviews-search-bar">
+        <div class="reviews-search-bar">
+          <button class="search-bar-button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+          <input type="search" placeholder="Search for product" class="search-bar">
+        </div>
+      </div>
+    </div>
+  
+    <div class="account-review-products">
+  
+      <div class="account-product-review">
+        <div class="product-review-thumbnail">
+          <img
+            src="/Products Images/Products Small Appliances Images/Microwave Samsung MS23K3513, 23 l, Digital, Quick Defrost, 800 W, Black.png"
+            alt="">
+        </div>
+  
+        <div class="product-review-details">
+          <div class="product-review-details-left">
+  
+            <a href="" class="review-details-product-title">
+              Microwave Samsung MS23K3513, 23 l, Digital, Quick Defrost, 800 W, Black
+            </a>
+  
+            <div class="review-details-product-review-rating">
+  
+              <span class="product-review-rating-field-name">
+                Rating given:
+              </span>
+  
+              <div class="product-review-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+  
+            </div>
+  
+            <div class="review-details-product-review-comment">
+              <span class="product-review-comment-field-name">
+                Comment given:
+              </span>
+              <p class="product-review-comment-field-value">Sofware broken doesn't register commands properly</p>
+            </div>
+  
+          </div>
+  
+          <div class="product-review-details-right">
+  
+            <div class="review-details-product-order-number">
+              <i class="fa-solid fa-box"></i>
+              <p>Order nr.:
+                <a href="">156418949</a>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-date">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>of:
+                <span>24 August 2022</span>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-time">
+              <i class="fa-regular fa-clock"></i>
+              <p>at:
+                <span>00:04</span>
+              </p>
+            </div>
+  
+            <div class="product-review-btn">
+              <button>Review</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="account-product-review">
+        <div class="product-review-thumbnail">
+          <img src="/Products Images/Products Fashion Images/Blouse for men, long sleeves, Slim Fit.png" alt="">
+        </div>
+  
+        <div class="product-review-details">
+          <div class="product-review-details-left">
+  
+            <a href="" class="review-details-product-title">
+              Blouse for men, long sleeves, Slim Fit, Black
+            </a>
+  
+            <div class="review-details-product-review-rating">
+  
+              <span class="product-review-rating-field-name">
+                Rating given:
+              </span>
+  
+              <div class="product-review-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+  
+            </div>
+  
+            <div class="review-details-product-review-comment">
+              <span class="product-review-comment-field-name">
+                Comment given:
+              </span>
+              <p class="product-review-comment-field-value">It's ok i guess...</p>
+            </div>
+  
+          </div>
+  
+          <div class="product-review-details-right">
+  
+            <div class="review-details-product-order-number">
+              <i class="fa-solid fa-box"></i>
+              <p>Order nr.:
+                <a href="">156418949</a>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-date">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>of:
+                <span>24 August 2022</span>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-time">
+              <i class="fa-regular fa-clock"></i>
+              <p>at:
+                <span>00:04</span>
+              </p>
+            </div>
+  
+            <div class="product-review-btn">
+              <button>Review</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="account-product-review">
+        <div class="product-review-thumbnail">
+          <img src="/Products Images/Products Drinks Images/Cider Strongbow Redberries, 24 x 0.33l .png" alt="">
+        </div>
+  
+        <div class="product-review-details">
+          <div class="product-review-details-left">
+  
+            <a href="" class="review-details-product-title">
+              Cider Strongbow Redberries, 24 x 0.33l
+            </a>
+  
+            <div class="review-details-product-review-rating">
+  
+              <span class="product-review-rating-field-name">
+                Rating given:
+              </span>
+  
+              <div class="product-review-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+  
+            </div>
+  
+            <div class="review-details-product-review-comment">
+              <span class="product-review-comment-field-name">
+                Comment given:
+              </span>
+              <p class="product-review-comment-field-value"></p>
+            </div>
+  
+          </div>
+  
+          <div class="product-review-details-right">
+  
+            <div class="review-details-product-order-number">
+              <i class="fa-solid fa-box"></i>
+              <p>Order nr.:
+                <a href="">156418949</a>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-date">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>of:
+                <span>24 August 2022</span>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-time">
+              <i class="fa-regular fa-clock"></i>
+              <p>at:
+                <span>00:04</span>
+              </p>
+            </div>
+  
+            <div class="product-review-btn">
+              <button>Review</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="account-product-review">
+        <div class="product-review-thumbnail">
+          <img src="/Products Images/Products Drinks Images/Energy Drink, Monster Green Energy,  dose 24 x 500ml .png"
+            alt="">
+        </div>
+  
+        <div class="product-review-details">
+          <div class="product-review-details-left">
+  
+            <a href="" class="review-details-product-title">
+              Energy Drink, Monster Green Energy, dose 24 x 500ml
+            </a>
+  
+            <div class="review-details-product-review-rating">
+  
+              <span class="product-review-rating-field-name">
+                Rating given:
+              </span>
+  
+              <div class="product-review-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+  
+            </div>
+  
+            <div class="review-details-product-review-comment">
+              <span class="product-review-comment-field-name">
+                Comment given:
+              </span>
+              <p class="product-review-comment-field-value"></p>
+            </div>
+  
+          </div>
+  
+          <div class="product-review-details-right">
+  
+            <div class="review-details-product-order-number">
+              <i class="fa-solid fa-box"></i>
+              <p>Order nr.:
+                <a href="">156418949</a>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-date">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>of:
+                <span>24 August 2080</span>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-time">
+              <i class="fa-regular fa-clock"></i>
+              <p>at:
+                <span>00:04</span>
+              </p>
+            </div>
+  
+            <div class="product-review-btn">
+              <button>Review</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="account-product-review">
+        <div class="product-review-thumbnail">
+          <img src="/Products Images/Products Drinks Images/Blonde Beer Ursus Premium, glass, 24 x 0.33l .png" alt="">
+        </div>
+  
+        <div class="product-review-details">
+          <div class="product-review-details-left">
+  
+            <a href="" class="review-details-product-title">
+              Blonde Beer Ursus Premium, sticla, 24 x 0.33l
+            </a>
+  
+            <div class="review-details-product-review-rating">
+  
+              <span class="product-review-rating-field-name">
+                Rating given:
+              </span>
+  
+              <div class="product-review-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+  
+            </div>
+  
+            <div class="review-details-product-review-comment">
+              <span class="product-review-comment-field-name">
+                Comment given:
+              </span>
+              <p class="product-review-comment-field-value"></p>
+            </div>
+  
+          </div>
+  
+          <div class="product-review-details-right">
+  
+            <div class="review-details-product-order-number">
+              <i class="fa-solid fa-box"></i>
+              <p>Order nr.:
+                <a href="">156418949</a>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-date">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>of:
+                <span>24 August 2080</span>
+              </p>
+            </div>
+  
+            <div class="review-details-product-order-time">
+              <i class="fa-regular fa-clock"></i>
+              <p>at:
+                <span>00:04</span>
+              </p>
+            </div>
+  
+            <div class="product-review-btn">
+              <button>Review</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <!---
+    <div class="account-empty-option-message">
+      <img src="/Logo/empty.png" alt="" class="logo">
+      <p>You have no products :O</p>
+      <a href="/Super-Market.html" target="_parent" class="account-empty-option-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+        Back to market</a>
+    </div>
+    --->
+  
+    </div>
+  </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-content">
+
+      <div class="footer-left-group">
+        <a class="footer-left-group-title" href="">Servicies for our clients</a>
+        <ul>
+          <li><a href="">Open parcel upon delivery</a></li>
+          <li><a href="">30 Days return policy</a></li>
+          <li><a href="">Interest-free installments with bank card</a></li>
+          <li><a href="">Warranties & Service</a></li>
+          <li><a href="">Black Friday</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-mid-group">
+        <div class="footer-mid-group-title">
+          <div class="market-logo-on-footer">
+            <span>Super</span>
+            <i class="fa-solid fa-stroopwafel fa-lg"></i>
+            <span>Market</span>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="">About Super Market</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Processing of personal data</a></li>
+          <li><a href="">Cookies policy</a></li>
+        </ul>
+
+        <div class="footer-mid-group-social-media">
+          <a><i class="fa-brands fa-twitter fa-2x"></i></a>
+          <a><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a><i class="fa-brands fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-right-group">
+        <a class="footer-right-group-title" href="">Orders & Delivery</a>
+        <ul>
+          <li><a href="">My Account at Super Market</a></li>
+          <li><a href="">Delivery of orders</a></li>
+          <li><a href="">Return Policy</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
